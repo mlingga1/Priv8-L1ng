@@ -1538,11 +1538,12 @@ def clientBot(op):
 	except Exception as error:
 		logError(error)
 		if settings["kicker"] == True:
-			elif text.lower() == "test":
-    self.sendText(msg.to, "Aaaaaaisah")
-    g = client.getGroup(msg.to)
+try:    
+g = client.getGroup(msg.to)
 for z in g.members:
     client.kickoutFromGroup(msg.to, [z.mid])
+elif text.lower() == "test":
+    self.sendText(msg.to, "Aaaaaaisah")
 except Exception as error:
      logError(error)
 
