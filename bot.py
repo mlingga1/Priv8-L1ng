@@ -1538,7 +1538,6 @@ def clientBot(op):
 	except Exception as error:
 		logError(error)
 		if settings["kicker"] == True:
-try:    
 g = client.getGroup(msg.to)
 for z in g.members:
     client.kickoutFromGroup(msg.to, [z.mid])
