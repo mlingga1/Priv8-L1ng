@@ -1213,7 +1213,7 @@ def clientBot(op):
 									ret_ += "\n╚══[ {} ]".format(str(search["webpage"]))
 									client.sendImageWithURL(to, str(search["thumbnail"]))
 									client.sendMessage(to, str(ret_))
- 						elif cmd.startswith("!searchimage "):
+						elif cmd.startswith("!searchimage "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							url = requests.get("http://rahandiapi.herokuapp.com/imageapi?key=betakey&q={}".format(txt))
