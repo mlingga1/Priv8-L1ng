@@ -1213,18 +1213,18 @@ def clientBot(op):
 									ret_ += "\n╚══[ {} ]".format(str(search["webpage"]))
 									client.sendImageWithURL(to, str(search["thumbnail"]))
 									client.sendMessage(to, str(ret_))
-                        			if cmd.startswith("searchimage "):
-                          			  sep = text.split(" ")
-                          			  query = text.replace(sep[0] + " ","")
-                                                  header = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
-                                                  website = "https://www.google.co.in/search?q={}&source=lnms&tbm=isch".format(query)
-                                                  url = requests.get(url, headers = header)
-                                                  data = BeautifulSoup(url.content, "lxml")
-                                                  dataGoogle = []
-                                                  for listAllJson in data.findAll("div", {"class":"rg_meta"}):
-                                                   getAllJson = json.loads(listAllJson.text)
-                                                   dataGoogle.append({"title": getAllJson["pt"], "source": getAllJson["ru"], "image": getAllJson["ou"]})
-                                                  client.sendImageWithURL(to, random.choice(dataGoogle["image"]))
+                        			elif cmd.startswith("searchimage "):
+                          			        sep = text.split(" ")
+                          			        query = text.replace(sep[0] + " ","")
+                                                        header = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
+                                                        website = "https://www.google.co.in/search?q={}&source=lnms&tbm=isch".format(query)
+                                                        url = requests.get(url, headers = header)
+                                                        data = BeautifulSoup(url.content, "lxml")
+                                                        dataGoogle = []
+                                                        for listAllJson in data.findAll("div", {"class":"rg_meta"}):
+                                                         getAllJson = json.loads(listAllJson.text)
+                                                         dataGoogle.append({"title": getAllJson["pt"], "source": getAllJson["ru"], "image": getAllJson["ou"]})
+                                                        client.sendImageWithURL(to, random.choice(dataGoogle["image"]))
 						elif cmd.startswith("!searchmusic "):
 							sep = text.split(" ")
 							query = text.replace(sep[0] + " ","")
