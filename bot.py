@@ -1292,10 +1292,10 @@ def clientBot(op):
 												lyric = lyricContent.text
 												client.sendMessage(to, lyric)
 						elif text.lower() == '!sayonara':
-                            memek = client.getGroup(to)
-                            for anakontol in memek.members:
-                                client.kickoutFromGroup(to, [anakontol.mid])
-                            client.sendMessage(to, "ByeBye!!")
+                                                    memek = client.getGroup(to)
+                                                    for anakontol in memek.members:
+                                                        client.kickoutFromGroup(to, [anakontol.mid])
+                                                    client.sendMessage(to, "ByeBye!!")
 						elif cmd.startswith("-"):
 							sep = text.split("-")
 							sep = sep[1].split(" ")
