@@ -129,21 +129,19 @@ def menuHelp():
 	else:
 		key = ''
 	menuHelp =	"〞〤 Keyword Message 〤〝" + "\n" + \
-				"<々> " + key + "Show" + "\n" + \
+				"<々> " + key + "!Show" + "\n" + \
 				"<々> " + key + "!Translate" + "\n" + \
 				"<々> " + key + "!TextToSpeech" + "\n" + \
-				"〞〤 Status Command 〤〝" + "\n" + \
-				"<々> MyKey" + "\n" + \
+				"<々> " + key + "!MyKey" + "\n" + \
 				"<々> " + key + "!Logout" + "\n" + \
 				"<々> " + key + "!Restart" + "\n" + \
 				"<々> " + key + "!Runtime" + "\n" + \
 				"<々> " + key + "!Speed" + "\n" + \
 				"<々> " + key + "!Status" + "\n" + \
-				"〞〤 Settings Command 〤〝" + "\n" + \
 				"<々> " + key + "!SetKey 「On/Off」" + "\n" + \
 				"<々> " + key + "!AutoAdd 「On/Off」" + "\n" + \
 				"<々> " + key + "!AutoJoin 「On/Off」" + "\n" + \
-				"<々>" + key + "!AutoJoinTicket 「On/Off」" + "\n" + \
+				"<々> " + key + "!AutoJoinTicket 「On/Off」" + "\n" + \
 				"<々> " + key + "!AutoRead 「On/Off」" + "\n" + \
 				"<々> " + key + "!AutoRespon 「On/Off」" + "\n" + \
 				"<々> " + key + "!CheckContact 「On/Off」" + "\n" + \
@@ -154,7 +152,6 @@ def menuHelp():
 				"<々> " + key + "!SetAutoAddMessage: 「text」" + "\n" + \
 				"<々> " + key + "!SetAutoResponMessage: 「text」" + "\n" + \
 				"<々> " + key + "!SetAutoJoinMessage: 「Text」" + "\n" + \
-				"〞〤 Self Command 〤〝" + "\n" + \
 				"<々> " + key + "!Cn <ChangeName>: 「Text」" + "\n" + \
 				"<々> " + key + "!CBio <ChangeBio>: 「Text」" + "\n" + \
 				"<々> " + key + "!Me" + "\n" + \
@@ -179,7 +176,6 @@ def menuHelp():
 				"<々> " + key + "!BlockList" + "\n" + \
 				"<々> " + key + "!FriendBroadcast" + "\n" + \
 				"<々> " + key + "!Cpp <ChangePictureProfile>" + "\n" + \
-				"〞〤 Group Command 〤〝" + "\n" + \
 				"<々> " + key + "!Cgn <ChangeGroupName>: 「Text」" + "\n" + \
 				"<々> " + key + "!GCreator <GroupCreator>" + "\n" + \
 				"<々> " + key + "!GID <GroupID>" + "\n" + \
@@ -193,7 +189,6 @@ def menuHelp():
 				"<々> " + key + "!Ginfo <GroupInfo>" + "\n" + \
 				"<々> " + key + "!Gbc <GroupBroadcast>: 「Text」" + "\n" + \
 				"<々> " + key + "!Cgp <ChangeGroupPicture>" + "\n" + \
-				"〞〤 Special Command 〤〝" + "\n" + \
 				"<々> " + key + "!Mimic 「On/Off」" + "\n" + \
 				"<々> " + key + "!MimicList" + "\n" + \
 				"<々> " + key + "!MimicAdd @Mention" + "\n" + \
@@ -202,7 +197,6 @@ def menuHelp():
 				"<々> " + key + "!Sider 「On/Off」" + "\n" + \
 				"<々> " + key + "!Sider" + "\n" + \
 				"<々> " + key + "!Sayonara <Kicker>" + "\n" + \
-				"〞〤 Media Command 〤〝" + "\n" + \
 				"<々> " + key + "InstaInfo 「Username」(No Work)" + "\n" + \
 				"<々> " + key + "InstaStory 「Username」(No Work)" + "\n" + \
 				"<々> " + key + "!Kiss" + "\n" + \
@@ -1350,38 +1344,6 @@ def clientBot(op):
 								client.updateGroupPicture(to, path)
 								client.sendMessage(to, "Successfully change photo group")
 								client.deleteFile(path)
-#-------------------------
-                                          #elif "gurl" == msg.text:
-                                              #print cl.getGroup(msg.to)
-                                              ##cl.sendMessage(msg)
-                                          elif msg.text in ["Clink"]:
-                                              if msg.toType == 2:
-                                                  group = cl.getGroup(msg.to)
-                                                  group.preventJoinByTicket = False
-                                                  cl.updateGroup(group)
-                                                  if wait["lang"] == "JP":
-                                                      cl.sendText(msg.to,"URL open ô€¨ô€„Œ")
-                                                  else:
-                                                      cl.sendText(msg.to,"URL open ô€¨ô€„Œ")
-                                              else:
-                                                  if wait["lang"] == "JP":
-                                                      cl.sendText(msg.to,"It can not be used outside the group👈")
-                                                  else:
-                                                      cl.sendText(msg.to,"Can not be used for groups other than")
-                                         elif msg.text in ["Curl"]:
-                                             if msg.toType == 2:
-                                                 group = cl.getGroup(msg.to)
-                                                 group.preventJoinByTicket = True
-                                                 cl.updateGroup(group)
-                                                 if wait["lang"] == "JP":
-                                                     cl.sendText(msg.to,"URL close 👈")
-                                                 else:
-                                                     cl.sendText(msg.to,"URL close 👈")
-                                             else:
-                                                 if wait["lang"] == "JP":
-                                                     cl.sendText(msg.to,"It can not be used outside the group  👈")
-                                                 else:
-                                                     cl.sendText(msg.to,"Can not be used for groups other than ")
 					elif msg.contentType == 7:
 						if settings["checkSticker"] == True:
 							stk_id = msg.contentMetadata['STKID']
