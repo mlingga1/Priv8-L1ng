@@ -1350,38 +1350,38 @@ def clientBot(op):
 								client.updateGroupPicture(to, path)
 								client.sendMessage(to, "Successfully change photo group")
 								client.deleteFile(path)
-								#-------------------------
-            #elif "gurl" == msg.text:
-                #print cl.getGroup(msg.to)
-                ##cl.sendMessage(msg)
-            elif msg.text in ["Clink"]:
-                if msg.toType == 2:
-                    group = cl.getGroup(msg.to)
-                    group.preventJoinByTicket = False
-                    cl.updateGroup(group)
-                    if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"URL open ô€¨ô€„Œ")
-                    else:
-                        cl.sendText(msg.to,"URL open ô€¨ô€„Œ")
-                else:
-                    if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"It can not be used outside the group👈")
-                    else:
-                        cl.sendText(msg.to,"Can not be used for groups other than")
-            elif msg.text in ["Curl"]:
-                if msg.toType == 2:
-                    group = cl.getGroup(msg.to)
-                    group.preventJoinByTicket = True
-                    cl.updateGroup(group)
-                    if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"URL close 👈")
-                    else:
-                        cl.sendText(msg.to,"URL close 👈")
-                else:
-                    if wait["lang"] == "JP":
-                        cl.sendText(msg.to,"It can not be used outside the group  👈")
-                    else:
-                        cl.sendText(msg.to,"Can not be used for groups other than ")
+#-------------------------
+                                          #elif "gurl" == msg.text:
+                                              #print cl.getGroup(msg.to)
+                                              ##cl.sendMessage(msg)
+                                          elif msg.text in ["Clink"]:
+                                              if msg.toType == 2:
+                                                  group = cl.getGroup(msg.to)
+                                                  group.preventJoinByTicket = False
+                                                  cl.updateGroup(group)
+                                                  if wait["lang"] == "JP":
+                                                      cl.sendText(msg.to,"URL open ô€¨ô€„Œ")
+                                                  else:
+                                                      cl.sendText(msg.to,"URL open ô€¨ô€„Œ")
+                                              else:
+                                                  if wait["lang"] == "JP":
+                                                      cl.sendText(msg.to,"It can not be used outside the group👈")
+                                                  else:
+                                                      cl.sendText(msg.to,"Can not be used for groups other than")
+                                         elif msg.text in ["Curl"]:
+                                             if msg.toType == 2:
+                                                 group = cl.getGroup(msg.to)
+                                                 group.preventJoinByTicket = True
+                                                 cl.updateGroup(group)
+                                                 if wait["lang"] == "JP":
+                                                     cl.sendText(msg.to,"URL close 👈")
+                                                 else:
+                                                     cl.sendText(msg.to,"URL close 👈")
+                                             else:
+                                                 if wait["lang"] == "JP":
+                                                     cl.sendText(msg.to,"It can not be used outside the group  👈")
+                                                 else:
+                                                     cl.sendText(msg.to,"Can not be used for groups other than ")
 					elif msg.contentType == 7:
 						if settings["checkSticker"] == True:
 							stk_id = msg.contentMetadata['STKID']
