@@ -128,7 +128,7 @@ def menuHelp():
 		key = settings['keyCommand']
 	else:
 		key = ''
-	menuHelp =	"aw〞〤 Keyword Message 〤〝" + "\n" + \
+	menuHelp =	"aw1〞〤 Keyword Message 〤〝" + "\n" + \
 				"<々> " + key + "!Show" + "\n" + \
 				"<々> " + key + "!Translate" + "\n" + \
 				"<々> " + key + "!TextToSpeech" + "\n" + \
@@ -1213,7 +1213,7 @@ def clientBot(op):
 									ret_ += "\n╚══[ {} ]".format(str(search["webpage"]))
 									client.sendImageWithURL(to, str(search["thumbnail"]))
 									client.sendMessage(to, str(ret_))
-                        			eif cmd.startswith("!searchimage "):
+                        			elif cmd.startswith("!searchimage "):
                           			        sep = text.split(" ")
                           			        query = text.replace(sep[0] + " ","")
                                                         header = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
