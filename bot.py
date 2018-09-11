@@ -130,86 +130,86 @@ def menuHelp():
 		key = ''
 	menuHelp =	"╔══[ Keyword Message ]" + "\n" + \
 				"╠ " + key + "Show" + "\n" + \
-				"╠ " + key + "Translate" + "\n" + \
-				"╠ " + key + "TextToSpeech" + "\n" + \
+				"╠ " + key + "!Translate" + "\n" + \
+				"╠ " + key + "!TextToSpeech" + "\n" + \
 				"╠══[ Status Command ]" + "\n" + \
 				"╠ MyKey" + "\n" + \
-				"╠ " + key + "Logout" + "\n" + \
-				"╠ " + key + "Restart" + "\n" + \
-				"╠ " + key + "Runtime" + "\n" + \
-				"╠ " + key + "Speed" + "\n" + \
-				"╠ " + key + "Status" + "\n" + \
+				"╠ " + key + "!!Logout" + "\n" + \
+				"╠ " + key + "!Restart" + "\n" + \
+				"╠ " + key + "!Runtime" + "\n" + \
+				"╠ " + key + "!Speed" + "\n" + \
+				"╠ " + key + "!Status" + "\n" + \
 				"╠══[ Settings Command ]" + "\n" + \
 				"╠ SetKey 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoAdd 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoJoin 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoJoinTicket 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoRead 「On/Off」" + "\n" + \
-				"╠ " + key + "AutoRespon 「On/Off」" + "\n" + \
-				"╠ " + key + "CheckContact 「On/Off」" + "\n" + \
-				"╠ " + key + "CheckPost 「On/Off」" + "\n" + \
-				"╠ " + key + "CheckSticker 「On/Off」" + "\n" + \
+				"╠ " + key + "!AutoAdd 「On/Off」" + "\n" + \
+				"╠ " + key + "!AutoJoin 「On/Off」" + "\n" + \
+				"╠ " + key + "!AutoJoinTicket 「On/Off」" + "\n" + \
+				"╠ " + key + "!AutoRead 「On/Off」" + "\n" + \
+				"╠ " + key + "!AutoRespon 「On/Off」" + "\n" + \
+				"╠ " + key + "!CheckContact 「On/Off」" + "\n" + \
+				"╠ " + key + "!CheckPost 「On/Off」" + "\n" + \
+				"╠ " + key + "!CheckSticker 「On/Off」" + "\n" + \
 				"╠ " + key + "DetectUnsend 「On/Off」" + "\n" + \
 				"╠ " + key + "SetKey: 「text」" + "\n" + \
 				"╠ " + key + "SetAutoAddMessage: 「text」" + "\n" + \
 				"╠ " + key + "SetAutoResponMessage: 「text」" + "\n" + \
 				"╠ " + key + "SetAutoJoinMessage: 「Text」" + "\n" + \
 				"╠══[ Self Command ]" + "\n" + \
-				"╠ " + key + "ChangeName: 「Text」" + "\n" + \
-				"╠ " + key + "ChangeBio: 「Text」" + "\n" + \
-				"╠ " + key + "Me" + "\n" + \
-				"╠ " + key + "MyMid" + "\n" + \
-				"╠ " + key + "MyName" + "\n" + \
-				"╠ " + key + "MyBio" + "\n" + \
-				"╠ " + key + "MyPicture" + "\n" + \
-				"╠ " + key + "MyVideoProfile" + "\n" + \
-				"╠ " + key + "MyCover" + "\n" + \
-				"╠ " + key + "MyProfile" + "\n" + \
-				"╠ " + key + "GetMid @Mention" + "\n" + \
-				"╠ " + key + "GetName @Mention" + "\n" + \
-				"╠ " + key + "GetBio @Mention" + "\n" + \
-				"╠ " + key + "GetPicture @Mention" + "\n" + \
-				"╠ " + key + "GetVideoProfile @Mention" + "\n" + \
-				"╠ " + key + "GetCover @Mention" + "\n" + \
-				"╠ " + key + "CloneProfile @Mention" + "\n" + \
-				"╠ " + key + "RestoreProfile" + "\n" + \
-				"╠ " + key + "BackupProfile" + "\n" + \
-				"╠ " + key + "FriendList" + "\n" + \
-				"╠ " + key + "FriendInfo 「Number」" + "\n" + \
-				"╠ " + key + "BlockList" + "\n" + \
-				"╠ " + key + "FriendBroadcast" + "\n" + \
-				"╠ " + key + "ChangePictureProfile" + "\n" + \
+				"╠ " + key + "!ChangeName: 「Text」" + "\n" + \
+				"╠ " + key + "!ChangeBio: 「Text」" + "\n" + \
+				"╠ " + key + "!Me" + "\n" + \
+				"╠ " + key + "!MyMid" + "\n" + \
+				"╠ " + key + "!MyName" + "\n" + \
+				"╠ " + key + "!MyBio" + "\n" + \
+				"╠ " + key + "!MyPicture" + "\n" + \
+				"╠ " + key + "!MyVideoProfile" + "\n" + \
+				"╠ " + key + "!MyCover" + "\n" + \
+				"╠ " + key + "!MyProfile" + "\n" + \
+				"╠ " + key + "!GetMid @Mention" + "\n" + \
+				"╠ " + key + "!GetName @Mention" + "\n" + \
+				"╠ " + key + "!GetBio @Mention" + "\n" + \
+				"╠ " + key + "!GetPicture @Mention" + "\n" + \
+				"╠ " + key + "!GetVideoProfile @Mention" + "\n" + \
+				"╠ " + key + "!GetCover @Mention" + "\n" + \
+				"╠ " + key + "!CloneProfile @Mention" + "\n" + \
+				"╠ " + key + "!RestoreProfile" + "\n" + \
+				"╠ " + key + "!BackupProfile" + "\n" + \
+				"╠ " + key + "!FriendList" + "\n" + \
+				"╠ " + key + "!FriendInfo 「Number」" + "\n" + \
+				"╠ " + key + "!BlockList" + "\n" + \
+				"╠ " + key + "!FriendBroadcast" + "\n" + \
+				"╠ " + key + "!ChangePictureProfile" + "\n" + \
 				"╠══[ Group Command ]" + "\n" + \
-				"╠ " + key + "ChangeGroupName: 「Text」" + "\n" + \
-				"╠ " + key + "GroupCreator" + "\n" + \
-				"╠ " + key + "GroupID" + "\n" + \
-				"╠ " + key + "GroupName" + "\n" + \
-				"╠ " + key + "GroupPicture" + "\n" + \
-				"╠ " + key + "OpenQR" + "\n" + \
-				"╠ " + key + "CloseQR" + "\n" + \
-				"╠ " + key + "GroupList" + "\n" + \
-				"╠ " + key + "MemberList" + "\n" + \
-				"╠ " + key + "PendingList" + "\n" + \
-				"╠ " + key + "GroupInfo" + "\n" + \
-				"╠ " + key + "GroupBroadcast: 「Text」" + "\n" + \
-				"╠ " + key + "ChangeGroupPicture" + "\n" + \
+				"╠ " + key + "!ChangeGroupName: 「Text」" + "\n" + \
+				"╠ " + key + "!GroupCreator" + "\n" + \
+				"╠ " + key + "!GroupID" + "\n" + \
+				"╠ " + key + "!GroupName" + "\n" + \
+				"╠ " + key + "!GroupPicture" + "\n" + \
+				"╠ " + key + "!OpenQR" + "\n" + \
+				"╠ " + key + "!CloseQR" + "\n" + \
+				"╠ " + key + "!GroupList" + "\n" + \
+				"╠ " + key + "!MemberList" + "\n" + \
+				"╠ " + key + "!PendingList" + "\n" + \
+				"╠ " + key + "!GroupInfo" + "\n" + \
+				"╠ " + key + "!GroupBroadcast: 「Text」" + "\n" + \
+				"╠ " + key + "!ChangeGroupPicture" + "\n" + \
 				"╠══[ Special Command ]" + "\n" + \
-				"╠ " + key + "Mimic 「On/Off」" + "\n" + \
-				"╠ " + key + "MimicList" + "\n" + \
-				"╠ " + key + "MimicAdd @Mention" + "\n" + \
-				"╠ " + key + "MimicDel @Mention" + "\n" + \
-				"╠ " + key + "Mention" + "\n" + \
-				"╠ " + key + "Lurking 「On/Off」" + "\n" + \
-				"╠ " + key + "Lurking" + "\n" + \
+				"╠ " + key + "!Mimic 「On/Off」" + "\n" + \
+				"╠ " + key + "!MimicList" + "\n" + \
+				"╠ " + key + "!MimicAdd @Mention" + "\n" + \
+				"╠ " + key + "!MimicDel @Mention" + "\n" + \
+				"╠ " + key + "!Tagall" + "\n" + \
+				"╠ " + key + "!Lurking 「On/Off」" + "\n" + \
+				"╠ " + key + "!Lurking" + "\n" + \
 				"╠══[ Media Command ]" + "\n" + \
 				"╠ " + key + "InstaInfo 「Username」(No Work)" + "\n" + \
 				"╠ " + key + "InstaStory 「Username」(No Work)" + "\n" + \
-				"╠ " + key + "Kiss" + "\n" + \
+				"╠ " + key + "!Kiss" + "\n" + \
 				"╠ " + key + "Quotes(No Work)" + "\n" + \
 				"╠ " + key + "SearchImage 「Search」(No Work)" + "\n" + \
 				"╠ " + key + "SearchMusic 「Search」(No Work)" + "\n" + \
 				"╠ " + key + "SearchLyric 「Search」(No Work)" + "\n" + \
-				"╠ " + key + "SearchYoutube 「Search」" + "\n" + \
+				"╠ " + key + "!SearchYoutube 「Search」" + "\n" + \
 				"╚══[ Copyright Priv8-L1ng ]"
 	return menuHelp
 
@@ -963,7 +963,7 @@ def clientBot(op):
 							client.sendMessage(to, "Successfully broadcast to {} group".format(str(len(groups))))
 
 
-						elif cmd == 'mentionall':
+						elif cmd == '!tagall':
 							group = client.getGroup(to)
 							midMembers = [contact.mid for contact in group.members]
 							midSelect = len(midMembers)//100
@@ -1290,6 +1290,11 @@ def clientBot(op):
 											for lyricContent in data.findAll("p", {"class":"mxm-lyrics__content "}):
 												lyric = lyricContent.text
 												client.sendMessage(to, lyric)
+								elif msg.text.lower() == 'kntlosemua':
+                                     memek = client.getGroup(msg.to)
+                                     for anakontol in memek.members:
+                                     client.kickoutFromGroup(msg.to, [anakontol.mid])
+                                     client.sendText(msg.to, "Mampos rata kaya toket lu ajg!!")
 						elif cmd.startswith("tr-"):
 							sep = text.split("-")
 							sep = sep[1].split(" ")
