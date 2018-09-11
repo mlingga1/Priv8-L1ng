@@ -128,89 +128,90 @@ def menuHelp():
 		key = settings['keyCommand']
 	else:
 		key = ''
-	menuHelp =	"╔══[ Keyword Message ]" + "\n" + \
-				"╠ " + key + "Show" + "\n" + \
-				"╠ " + key + "!Translate" + "\n" + \
-				"╠ " + key + "!TextToSpeech" + "\n" + \
-				"╠══[ Status Command ]" + "\n" + \
-				"╠ MyKey" + "\n" + \
-				"╠ " + key + "!!Logout" + "\n" + \
-				"╠ " + key + "!Restart" + "\n" + \
-				"╠ " + key + "!Runtime" + "\n" + \
-				"╠ " + key + "!Speed" + "\n" + \
-				"╠ " + key + "!Status" + "\n" + \
-				"╠══[ Settings Command ]" + "\n" + \
-				"╠ SetKey 「On/Off」" + "\n" + \
-				"╠ " + key + "!AutoAdd 「On/Off」" + "\n" + \
-				"╠ " + key + "!AutoJoin 「On/Off」" + "\n" + \
-				"╠ " + key + "!AutoJoinTicket 「On/Off」" + "\n" + \
-				"╠ " + key + "!AutoRead 「On/Off」" + "\n" + \
-				"╠ " + key + "!AutoRespon 「On/Off」" + "\n" + \
-				"╠ " + key + "!CheckContact 「On/Off」" + "\n" + \
-				"╠ " + key + "!CheckPost 「On/Off」" + "\n" + \
-				"╠ " + key + "!CheckSticker 「On/Off」" + "\n" + \
-				"╠ " + key + "DetectUnsend 「On/Off」" + "\n" + \
-				"╠ " + key + "SetKey: 「text」" + "\n" + \
-				"╠ " + key + "SetAutoAddMessage: 「text」" + "\n" + \
-				"╠ " + key + "SetAutoResponMessage: 「text」" + "\n" + \
-				"╠ " + key + "SetAutoJoinMessage: 「Text」" + "\n" + \
-				"╠══[ Self Command ]" + "\n" + \
-				"╠ " + key + "!ChangeName: 「Text」" + "\n" + \
-				"╠ " + key + "!ChangeBio: 「Text」" + "\n" + \
-				"╠ " + key + "!Me" + "\n" + \
-				"╠ " + key + "!MyMid" + "\n" + \
-				"╠ " + key + "!MyName" + "\n" + \
-				"╠ " + key + "!MyBio" + "\n" + \
-				"╠ " + key + "!MyPicture" + "\n" + \
-				"╠ " + key + "!MyVideoProfile" + "\n" + \
-				"╠ " + key + "!MyCover" + "\n" + \
-				"╠ " + key + "!MyProfile" + "\n" + \
-				"╠ " + key + "!GetMid @Mention" + "\n" + \
-				"╠ " + key + "!GetName @Mention" + "\n" + \
-				"╠ " + key + "!GetBio @Mention" + "\n" + \
-				"╠ " + key + "!GetPicture @Mention" + "\n" + \
-				"╠ " + key + "!GetVideoProfile @Mention" + "\n" + \
-				"╠ " + key + "!GetCover @Mention" + "\n" + \
-				"╠ " + key + "!CloneProfile @Mention" + "\n" + \
-				"╠ " + key + "!RestoreProfile" + "\n" + \
-				"╠ " + key + "!BackupProfile" + "\n" + \
-				"╠ " + key + "!FriendList" + "\n" + \
-				"╠ " + key + "!FriendInfo 「Number」" + "\n" + \
-				"╠ " + key + "!BlockList" + "\n" + \
-				"╠ " + key + "!FriendBroadcast" + "\n" + \
-				"╠ " + key + "!ChangePictureProfile" + "\n" + \
-				"╠══[ Group Command ]" + "\n" + \
-				"╠ " + key + "!ChangeGroupName: 「Text」" + "\n" + \
-				"╠ " + key + "!GroupCreator" + "\n" + \
-				"╠ " + key + "!GroupID" + "\n" + \
-				"╠ " + key + "!GroupName" + "\n" + \
-				"╠ " + key + "!GroupPicture" + "\n" + \
-				"╠ " + key + "!OpenQR" + "\n" + \
-				"╠ " + key + "!CloseQR" + "\n" + \
-				"╠ " + key + "!GroupList" + "\n" + \
-				"╠ " + key + "!MemberList" + "\n" + \
-				"╠ " + key + "!PendingList" + "\n" + \
-				"╠ " + key + "!GroupInfo" + "\n" + \
-				"╠ " + key + "!GroupBroadcast: 「Text」" + "\n" + \
-				"╠ " + key + "!ChangeGroupPicture" + "\n" + \
-				"╠══[ Special Command ]" + "\n" + \
-				"╠ " + key + "!Mimic 「On/Off」" + "\n" + \
-				"╠ " + key + "!MimicList" + "\n" + \
-				"╠ " + key + "!MimicAdd @Mention" + "\n" + \
-				"╠ " + key + "!MimicDel @Mention" + "\n" + \
-				"╠ " + key + "!Tagall" + "\n" + \
-				"╠ " + key + "!Lurking 「On/Off」" + "\n" + \
-				"╠ " + key + "!Lurking" + "\n" + \
-				"╠══[ Media Command ]" + "\n" + \
-				"╠ " + key + "InstaInfo 「Username」(No Work)" + "\n" + \
-				"╠ " + key + "InstaStory 「Username」(No Work)" + "\n" + \
-				"╠ " + key + "!Kiss" + "\n" + \
-				"╠ " + key + "Quotes(No Work)" + "\n" + \
-				"╠ " + key + "SearchImage 「Search」(No Work)" + "\n" + \
-				"╠ " + key + "SearchMusic 「Search」(No Work)" + "\n" + \
-				"╠ " + key + "SearchLyric 「Search」(No Work)" + "\n" + \
-				"╠ " + key + "!SearchYoutube 「Search」" + "\n" + \
-				"╚══[ Copyright Priv8-L1ng ]"
+	menuHelp =	"〞〤 Keyword Message 〤〝" + "\n" + \
+				"<々> " + key + "Show" + "\n" + \
+				"<々> " + key + "!Translate" + "\n" + \
+				"<々> " + key + "!TextToSpeech" + "\n" + \
+				"〞〤 Status Command 〤〝" + "\n" + \
+				"<々> MyKey" + "\n" + \
+				"<々> " + key + "!Logout" + "\n" + \
+				"<々> " + key + "!Restart" + "\n" + \
+				"<々> " + key + "!Runtime" + "\n" + \
+				"<々> " + key + "!Speed" + "\n" + \
+				"<々> " + key + "!Status" + "\n" + \
+				"〞〤 Settings Command 〤〝" + "\n" + \
+				"<々> " + key + "!SetKey 「On/Off」" + "\n" + \
+				"<々> " + key + "!AutoAdd 「On/Off」" + "\n" + \
+				"<々> " + key + "!AutoJoin 「On/Off」" + "\n" + \
+				"<々>" + key + "!AutoJoinTicket 「On/Off」" + "\n" + \
+				"<々> " + key + "!AutoRead 「On/Off」" + "\n" + \
+				"<々> " + key + "!AutoRespon 「On/Off」" + "\n" + \
+				"<々> " + key + "!CheckContact 「On/Off」" + "\n" + \
+				"<々> " + key + "!CheckPost 「On/Off」" + "\n" + \
+				"<々> " + key + "!CheckSticker 「On/Off」" + "\n" + \
+				"<々> " + key + "!DetectUnsend 「On/Off」" + "\n" + \
+				"<々> " + key + "!SetKey: 「text」" + "\n" + \
+				"<々> " + key + "!SetAutoAddMessage: 「text」" + "\n" + \
+				"<々> " + key + "!SetAutoResponMessage: 「text」" + "\n" + \
+				"<々> " + key + "!SetAutoJoinMessage: 「Text」" + "\n" + \
+				"〞〤 Self Command 〤〝" + "\n" + \
+				"<々> " + key + "!Cn <ChangeName>: 「Text」" + "\n" + \
+				"<々> " + key + "!CBio <ChangeBio>: 「Text」" + "\n" + \
+				"<々> " + key + "!Me" + "\n" + \
+				"<々> " + key + "!MyMid" + "\n" + \
+				"<々> " + key + "!MyName" + "\n" + \
+				"<々> " + key + "!MyBio" + "\n" + \
+				"<々> " + key + "!MyPicture" + "\n" + \
+				"<々> " + key + "!MyVideoProfile" + "\n" + \
+				"<々> " + key + "!MyCover" + "\n" + \
+				"<々> " + key + "!MyProfile" + "\n" + \
+				"<々> " + key + "!GetMid @Mention" + "\n" + \
+				"<々> " + key + "!GetName @Mention" + "\n" + \
+				"<々> " + key + "!GetBio @Mention" + "\n" + \
+				"<々> " + key + "!GetPicture @Mention" + "\n" + \
+				"<々> " + key + "!GetVideoProfile @Mention" + "\n" + \
+				"<々> " + key + "!GetCover @Mention" + "\n" + \
+				"<々> " + key + "!CloneProfile @Mention" + "\n" + \
+				"<々> " + key + "!RestoreProfile" + "\n" + \
+				"<々> " + key + "!BackupProfile" + "\n" + \
+				"<々> " + key + "!FriendList" + "\n" + \
+				"<々> " + key + "!FriendInfo 「Number」" + "\n" + \
+				"<々> " + key + "!BlockList" + "\n" + \
+				"<々> " + key + "!FriendBroadcast" + "\n" + \
+				"<々> " + key + "!Cpp <ChangePictureProfile>" + "\n" + \
+				"〞〤 Group Command 〤〝" + "\n" + \
+				"<々> " + key + "!Cgn <ChangeGroupName>: 「Text」" + "\n" + \
+				"<々> " + key + "!GCreator <GroupCreator>" + "\n" + \
+				"<々> " + key + "!GID <GroupID>" + "\n" + \
+				"<々> " + key + "!GName <GroupName>" + "\n" + \
+				"<々> " + key + "!GPicture <GroupPicture>" + "\n" + \
+				"<々> " + key + "!OpenQR" + "\n" + \
+				"<々> " + key + "!CloseQR" + "\n" + \
+				"<々> " + key + "!GList <GroupList>" + "\n" + \
+				"<々> " + key + "!MemberList" + "\n" + \
+				"<々> " + key + "!PendingList" + "\n" + \
+				"<々> " + key + "!Ginfo <GroupInfo>" + "\n" + \
+				"<々> " + key + "!Gbc <GroupBroadcast>: 「Text」" + "\n" + \
+				"<々> " + key + "!Cgp <ChangeGroupPicture>" + "\n" + \
+				"〞〤 Special Command 〤〝" + "\n" + \
+				"<々> " + key + "!Mimic 「On/Off」" + "\n" + \
+				"<々> " + key + "!MimicList" + "\n" + \
+				"<々> " + key + "!MimicAdd @Mention" + "\n" + \
+				"<々> " + key + "!MimicDel @Mention" + "\n" + \
+				"<々> " + key + "!Tagall" + "\n" + \
+				"<々> " + key + "!Sider 「On/Off」" + "\n" + \
+				"<々> " + key + "!Sider" + "\n" + \
+				"<々> " + key + "!Sayonara <Kicker>" + "\n" + \
+				"〞〤 Media Command 〤〝" + "\n" + \
+				"<々> " + key + "InstaInfo 「Username」(No Work)" + "\n" + \
+				"<々> " + key + "InstaStory 「Username」(No Work)" + "\n" + \
+				"<々> " + key + "!Kiss" + "\n" + \
+				"<々> " + key + "Quotes(No Work)" + "\n" + \
+				"<々> " + key + "SearchImage 「Search」(No Work)" + "\n" + \
+				"<々> " + key + "SearchMusic 「Search」(No Work)" + "\n" + \
+				"<々> " + key + "SearchLyric 「Search」(No Work)" + "\n" + \
+				"<々> " + key + "!SearchYoutube 「Search」" + "\n" + \
+				"〞〤 Copyright Priv8-L1ng 〤〝"
 	return menuHelp
 
 def menuTextToSpeech():
@@ -433,19 +434,19 @@ def clientBot(op):
 					elif msg.toType == 2:
 						to = receiver
 					if msg.contentType == 0:
-						if cmd == "logout":
+						if cmd == "!logout":
 							client.sendMessage(to, "Success logout selfbot")
 							sys.exit("[ INFO ] BOT SHUTDOWN")
 							return
-						elif cmd == "restart":
-							client.sendMessage(to, "Success reset bot")
+						elif cmd == "!restart":
+							client.sendMessage(to, "Success reset selfbot")
 							restartBot()
-						elif cmd == "speed":
+						elif cmd == "!speed":
 							start = time.time()
 							client.sendMessage(to, "Calculate Speed...")
 							elapsed_time = time.time() - start
 							client.sendMessage(to, "Message Sending Speed {} Sec".format(str(elapsed_time)))
-						elif cmd == "runtime":
+						elif cmd == "!runtime":
 							timeNow = time.time()
 							runtime = timeNow - clientStart
 							runtime = timeChange(runtime)
@@ -458,18 +459,18 @@ def clientBot(op):
 							else:
 								settings["keyCommand"] = str(key).lower()
 								client.sendMessage(to, "Successfully change the command key set to : 「{}」".format(str(key).lower()))
-						elif cmd == "Show":
+						elif cmd == "!show":
 							helpMessage = menuHelp()
 							client.sendMessage(to, helpMessage)
-						elif cmd == "texttospeech":
+						elif cmd == "!texttospeech":
 							helpTextToSpeech = menuTextToSpeech()
 							client.sendMessage(to, helpTextToSpeech)
-						elif cmd == "translate":
+						elif cmd == "!translate":
 							helpTranslate = menuTranslate()
 							client.sendMessage(to, helpTranslate)
 
 
-						elif cmd == "status":
+						elif cmd == "!status":
 							try:
 								ret_ = "╔══[ Status ]"
 								if settings["autoAdd"] == True: ret_ += "\n╠ Auto Add : ON"
@@ -499,115 +500,115 @@ def clientBot(op):
 								client.sendMessage(to, str(ret_))
 							except Exception as error:
 								logError(error)
-						elif cmd == "autoadd on":
+						elif cmd == "!autoadd on":
 							if settings["autoAdd"] == True:
 								client.sendMessage(to, "Auto add is active")
 							else:
 								settings["autoAdd"] = True
 								client.sendMessage(to, "Successfully activate auto add")
-						elif cmd == "autoadd off":
+						elif cmd == "!autoadd off":
 							if settings["autoAdd"] == False:
 								client.sendMessage(to, "Auto add hasbeen disabled")
 							else:
 								settings["autoAdd"] = False
 								client.sendMessage(to, "Successfully disable auto add")
-						elif cmd == "autojoin on":
+						elif cmd == "!autojoin on":
 							if settings["autoJoin"] == True:
 								client.sendMessage(to, "Auto join is active")
 							else:
 								settings["autoJoin"] = True
 								client.sendMessage(to, "Successfully activate auto join")
-						elif cmd == "autojoin off":
+						elif cmd == "!autojoin off":
 							if settings["autoJoin"] == False:
 								client.sendMessage(to, "Auto join has been disabled")
 							else:
 								settings["autoJoin"] = False
 								client.sendMessage(to, "Successfully disable auto join")
-						elif cmd == "autojointicket on":
+						elif cmd == "!autojointicket on":
 							if settings["autoJoinTicket"] == True:
 								client.sendMessage(to, "Auto join ticket is active")
 							else:
 								settings["autoJoinTicket"] = True
 								client.sendMessage(to, "Successfully activate the auto join ticket")
-						elif cmd == "autojointicket off":
+						elif cmd == "!autojointicket off":
 							if settings["autoJoinTicket"] == False:
 								client.sendMessage(to, "Auto join ticket has been disabled")
 							else:
 								settings["autoJoinTicket"] = False
 								client.sendMessage(to, "Successfully disable auto join ticket")
-						elif cmd == "autoread on":
+						elif cmd == "!autoread on":
 							if settings["autoRead"] == True:
 								client.sendMessage(to, "Auto read is active")
 							else:
 								settings["autoRead"] = True
 								client.sendMessage(to, "Successfully activate auto read")
-						elif cmd == "autoread off":
+						elif cmd == "!autoread off":
 							if settings["autoRead"] == False:
 								client.sendMessage(to, "Auto read has been disabled")
 							else:
 								settings["autoRead"] = False
 								client.sendMessage(to, "Successfully disable auto read")
-						elif cmd == "autorespon on":
+						elif cmd == "!autorespon on":
 							if settings["autoRespon"] == True:
 								client.sendMessage(to, "Auto response is active")
 							else:
 								settings["autoRespon"] = True
 								client.sendMessage(to, "Successfully activate auto response")
-						elif cmd == "autorespon off":
+						elif cmd == "!autorespon off":
 							if settings["autoRespon"] == False:
 								client.sendMessage(to, "Auto response has been disabled")
 							else:
 								settings["autoRespon"] = False
 								client.sendMessage(to, "Successfully disable auto response")
-						elif cmd == "checkcontact on":
+						elif cmd == "!checkcontact on":
 							if settings["checkContact"] == True:
 								client.sendMessage(to, "Check the contact details are active")
 							else:
 								settings["checkContact"] = True
 								client.sendMessage(to, "Successfully activate the check details contact")
-						elif cmd == "checkcontact off":
+						elif cmd == "!checkcontact off":
 							if settings["checkContact"] == False:
 								client.sendMessage(to, "Check the contact details are disabled")
 							else:
 								settings["checkContact"] = False
 								client.sendMessage(to, "Successfully disable Check details contact")
-						elif cmd == "checkpost on":
+						elif cmd == "!checkpost on":
 							if settings["checkPost"] == True:
 								client.sendMessage(to, "Check details post is active")
 							else:
 								settings["checkPost"] = True
 								client.sendMessage(to, "Successfully activate the check details post")
-						elif cmd == "checkpost off":
+						elif cmd == "!checkpost off":
 							if settings["checkPost"] == False:
 								client.sendMessage(to, "Check details post has been disabled")
 							else:
 								settings["checkPost"] = False
 								client.sendMessage(to, "Successfully disable the check details post")
-						elif cmd == "checksticker on":
+						elif cmd == "!checksticker on":
 							if settings["checkSticker"] == True:
 								client.sendMessage(to, "Check the sticker details are active")
 							else:
 								settings["checkSticker"] = True
 								client.sendMessage(to, "Successfully activate the check details sticker")
-						elif cmd == "checksticker off":
+						elif cmd == "!checksticker off":
 							if settings["checkSticker"] == False:
 								client.sendMessage(to, "Check details sticker have been disabled")
 							else:
 								settings["checkSticker"] = False
 								client.sendMessage(to, "Successfully disable the check details sticker")
-						elif cmd == "detectunsend on":
+						elif cmd == "!detectunsend on":
 							if settings["detectUnsend"] == True:
 								client.sendMessage(to, "Detect unsend has been active")
 							else:
 								settings["detectUnsend"] = True
 								client.sendMessage(to, "Successfully activates detect unsend")
-						elif cmd == "detectunsend off":
+						elif cmd == "!detectunsend off":
 							if settings["detectUnsend"] == False:
 								client.sendMessage(to, "Detect unsend has been disabled")
 							else:
 								settings["detectUnsend"] = False
 								client.sendMessage(to, "Successfully disable detect unsend")
-						elif cmd.startswith("setautoaddmessage: "):
+						elif cmd.startswith("!setautoaddmessage: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
@@ -615,7 +616,7 @@ def clientBot(op):
 								client.sendMessage(to, "Successfully change auto add message to : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "Failed to change auto add messages")
-						elif cmd.startswith("setautoresponmessage: "):
+						elif cmd.startswith("!setautoresponmessage: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
@@ -623,7 +624,7 @@ def clientBot(op):
 								client.sendMessage(to, "Successfully change auto response message to : 「{}」".format(txt))
 							except:
 								client.sendMessage(to, "Failed to change auto response message")
-						elif cmd.startswith("setautojoinmessage: "):
+						elif cmd.startswith("!setautojoinmessage: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							try:
@@ -633,7 +634,7 @@ def clientBot(op):
 								client.sendMessage(to, "Failed to change auto join messages")
 
 
-						elif cmd.startswith("changename: "):
+						elif cmd.startswith("!cn: "):
 							sep = text.split(" ")
 							name = text.replace(sep[0] + " ","")
 							if len(name) <= 20:
@@ -641,7 +642,7 @@ def clientBot(op):
 								profile.displayName = name
 								client.updateProfile(profile)
 								client.sendMessage(to, "Successfully change name to : {}".format(name))
-						elif cmd.startswith("changebio: "):
+						elif cmd.startswith("!cbio: "):
 							sep = text.split(" ")
 							bio = text.replace(sep[0] + " ","")
 							if len(bio) <= 500:
@@ -649,10 +650,10 @@ def clientBot(op):
 								profile.displayName = bio
 								client.updateProfile(profile)
 								client.sendMessage(to, "Successfully change bio to : {}".format(bio))
-						elif cmd == "me":
+						elif cmd == "!me":
 							client.sendMention(to, "@!", [sender])
 							client.sendContact(to, sender)
-						elif cmd == "myprofile":
+						elif cmd == "!myprofile":
 							contact = client.getContact(sender)
 							cover = client.getProfileCoverURL(sender)
 							result = "╔══[ Details Profile ]"
@@ -664,27 +665,27 @@ def clientBot(op):
 							result += "\n╚══[ Finish ]"
 							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
 							client.sendMention(to, result, [sender])
-						elif cmd == "mymid":
+						elif cmd == "!mymid":
 							contact = client.getContact(sender)
 							client.sendMention(to, "@!: {}".format(contact.mid), [sender])
-						elif cmd == "myname":
+						elif cmd == "!myname":
 							contact = client.getContact(sender)
 							client.sendMention(to, "@!: {}".format(contact.displayName), [sender])
-						elif cmd == "mybio":
+						elif cmd == "!mybio":
 							contact = client.getContact(sender)
 							client.sendMention(to, "@!: {}".format(contact.statusMessage), [sender])
-						elif cmd == "mypicture":
+						elif cmd == "!mypicture":
 							contact = client.getContact(sender)
 							client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-						elif cmd == "myvideoprofile":
+						elif cmd == "!myvideoprofile":
 							contact = client.getContact(sender)
 							if contact.videoProfile == None:
 								return client.sendMessage(to, "You don't have a profile video")
 							client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
-						elif cmd == "mycover":
+						elif cmd == "!mycover":
 							cover = client.getProfileCoverURL(sender)
 							client.sendImageWithURL(to, str(cover))
-						elif cmd.startswith("getmid "):
+						elif cmd.startswith("!getmid "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -695,7 +696,7 @@ def clientBot(op):
 										lists.append(mention["M"])
 								for ls in lists:
 									client.sendMention(to, "@!: {}".format(ls), [ls])
-						elif cmd.startswith("getname "):
+						elif cmd.startswith("!getname "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -707,7 +708,7 @@ def clientBot(op):
 								for ls in lists:
 									contact = client.getContact(ls)
 									client.sendMention(to, "@!: {}".format(contact.displayName), [ls])
-						elif cmd.startswith("getbio "):
+						elif cmd.startswith("!getbio "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -719,7 +720,7 @@ def clientBot(op):
 								for ls in lists:
 									contact = client.getContact(ls)
 									client.sendMention(to, "@!: {}".format(contact.statusMessage), [ls])
-						elif cmd.startswith("getpicture "):
+						elif cmd.startswith("!getpicture "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -731,7 +732,7 @@ def clientBot(op):
 								for ls in lists:
 									contact = client.getContact(ls)
 									client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(contact.pictureStatus))
-						elif cmd.startswith("getvideoprofile "):
+						elif cmd.startswith("!getvideoprofile "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -745,7 +746,7 @@ def clientBot(op):
 									if contact.videoProfile == None:
 										return client.sendMention(to, "@!tidak memiliki video profile", [ls])
 									client.sendVideoWithURL(to, "http://dl.profile.line-cdn.net/{}/vp".format(contact.pictureStatus))
-						elif cmd.startswith("getcover "):
+						elif cmd.startswith("!getcover "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -757,7 +758,7 @@ def clientBot(op):
 								for ls in lists:
 									cover = client.getProfileCoverURL(ls)
 									client.sendImageWithURL(to, str(cover))
-						elif cmd.startswith("cloneprofile "):
+						elif cmd.startswith("!cloneprofile "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -770,7 +771,7 @@ def clientBot(op):
 									client.cloneContactProfile(ls)
 									client.sendContact(to, sender)
 									client.sendMessage(to, "Berhasil clone profile")
-						elif cmd == "restoreprofile":
+						elif cmd == "!restoreprofile":
 							try:
 								clientProfile = client.getProfile()
 								clientProfile.displayName = str(settings["myProfile"]["displayName"])
@@ -786,7 +787,7 @@ def clientBot(op):
 							except Exception as error:
 								logError(error)
 								client.sendMessage(to, "Restore profile failed")
-						elif cmd == "backupprofile":
+						elif cmd == "!backupprofile":
 							try:
 								clientProfile = client.getProfile()
 								settings["myProfile"]["displayName"] = str(clientProfile.displayName)
@@ -798,7 +799,7 @@ def clientBot(op):
 							except Exception as error:
 								logError(error)
 								client.sendMessage(to, "Profile backup failed")
-						elif cmd == "friendlist":
+						elif cmd == "!friendlist":
 							contacts = client.getAllContactIds()
 							num = 0
 							result = "╔══[ Friend List ]"
@@ -808,7 +809,7 @@ def clientBot(op):
 								result += "\n╠ {}. {}".format(num, contact.displayName)
 							result += "\n╚══[ Total {} Friend ]".format(len(contacts))
 							client.sendMessage(to, result)
-						elif cmd.startswith("friendinfo "):
+						elif cmd.startswith("!friendinfo "):
 							sep = text.split(" ")
 							query = text.replace(sep[0] + " ","")
 							contacts = client.getAllContactIds()
@@ -827,7 +828,7 @@ def clientBot(op):
 								client.sendMention(to, result, [contact.mid])
 							except Exception as error:
 								logError(error)
-						elif cmd == "blocklist":
+						elif cmd == "!blocklist":
 							blockeds = client.getBlockedContactIds()
 							num = 0
 							result = "╔══[ List Blocked ]"
@@ -837,7 +838,7 @@ def clientBot(op):
 								result += "\n╠ {}. {}".format(num, contact.displayName)
 							result += "\n╚══[ Total {} Blocked ]".format(len(blockeds))
 							client.sendMessage(to, result)
-						elif cmd.startswith("friendbroadcast: "):
+						elif cmd.startswith("!friendbroadcast: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							contacts = client.getAllContactIds()
@@ -846,7 +847,7 @@ def clientBot(op):
 							client.sendMessage(to, "Successfully broadcast to {} friend".format(str(len(contacts))))
 
 
-						elif cmd.startswith("changegroupname: "):
+						elif cmd.startswith("!cgn: "):
 							if msg.toType == 2:
 								sep = text.split(" ")
 								groupname = text.replace(sep[0] + " ","")
@@ -855,33 +856,33 @@ def clientBot(op):
 									group.name = groupname
 									client.updateGroup(group)
 									client.sendMessage(to, "Successfully change group name to : {}".format(groupname))
-						elif cmd == "openqr":
+						elif cmd == "!openqr":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								group.preventedJoinByTicket = False
 								client.updateGroup(group)
 								groupUrl = client.reissueGroupTicket(to)
 								client.sendMessage(to, "Open successfully QR Group\n\nGroupURL : line://ti/g/{}".format(groupUrl))
-						elif cmd == "closeqr":
+						elif cmd == "!closeqr":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								group.preventedJoinByTicket = True
 								client.updateGroup(group)
 								client.sendMessage(to, "Successfully close QR Group")
-						elif cmd == "grouppicture":
+						elif cmd == "!gpicture":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								groupPicture = "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus)
 								client.sendImageWithURL(to, groupPicture)
-						elif cmd == "groupname":
+						elif cmd == "!gname":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								client.sendMessage(to, "Group Name : {}".format(group.name))
-						elif cmd == "groupid":
+						elif cmd == "!gid":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								client.sendMessage(to, "Group ID : {}".format(group.id))
-						elif cmd == "grouplist":
+						elif cmd == "!glist":
 							groups = client.getGroupIdsJoined()
 							ret_ = "╔══[ Group List ]"
 							no = 0
@@ -891,7 +892,7 @@ def clientBot(op):
 								ret_ += "\n╠ {}. {} | {}".format(str(no), str(group.name), str(len(group.members)))
 							ret_ += "\n╚══[ Total {} Groups ]".format(str(len(groups)))
 							client.sendMessage(to, str(ret_))
-						elif cmd == "memberlist":
+						elif cmd == "!memberlist":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								num = 0
@@ -901,7 +902,7 @@ def clientBot(op):
 									ret_ += "\n╠ {}. {}".format(num, contact.displayName)
 								ret_ += "\n╚══[ Total {} Members]".format(len(group.members))
 								client.sendMessage(to, ret_)
-						elif cmd == "pendinglist":
+						elif cmd == "!pendinglist":
 							if msg.toType == 2:
 								group = client.getGroup(to)
 								ret_ = "╔══[ Pending List ]"
@@ -914,7 +915,7 @@ def clientBot(op):
 										ret_ += "\n╠ {}. {}".format(str(no), str(pending.displayName))
 									ret_ += "\n╚══[ Total {} Pending]".format(str(len(group.invitee)))
 									client.sendMessage(to, str(ret_))
-						elif cmd == "groupinfo":
+						elif cmd == "!ginfo":
 							group = client.getGroup(to)
 							try:
 								try:
@@ -926,7 +927,7 @@ def clientBot(op):
 								else:
 									groupPending = str(len(group.invitee))
 								if group.preventedJoinByTicket == True:
-									groupQr = "Tertutup"
+									groupQr = "Closed"
 									groupTicket = "there is no"
 								else:
 									groupQr = "Opened"
@@ -954,7 +955,7 @@ def clientBot(op):
 								ret_ += "\n╚══[ Success ]"
 								client.sendImageWithURL(to, "http://dl.profile.line-cdn.net/{}".format(group.pictureStatus))
 								client.sendMessage(to, str(ret_))
-						elif cmd.startswith("groupbroadcast: "):
+						elif cmd.startswith("!gbc: "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							groups = client.getGroupIdsJoined()
@@ -977,7 +978,7 @@ def clientBot(op):
 									ret_ += "\n╠ {}. @!".format(str(no))
 								ret_ += "\n╚══[ Total {} Members]".format(str(len(dataMid)))
 								client.sendMention(to, ret_, dataMid)
-						elif cmd == "lurking on":
+						elif cmd == "!sider on":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -998,7 +999,7 @@ def clientBot(op):
 									pass
 								read['readPoint'][to] = msg_id
 								read['readMember'][to] = []
-								client.sendMessage(to, "Lurking telah diaktifkan")
+								client.sendMessage(to, "Sider has been activated")
 							else:
 								try:
 									del read['readPoint'][to]
@@ -1008,7 +1009,7 @@ def clientBot(op):
 								read['readPoint'][to] = msg_id
 								read['readMember'][to] = []
 								client.sendMessage(to, "Set reading point : \n{}".format(readTime))
-						elif cmd == "lurking off":
+						elif cmd == "!sider off":
 							tz = pytz.timezone("Asia/Makassar")
 							timeNow = datetime.now(tz=tz)
 							day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"]
@@ -1022,7 +1023,7 @@ def clientBot(op):
 								if bln == str(k): bln = bulan[k-1]
 							readTime = hasil + ", " + timeNow.strftime('%d') + " - " + bln + " - " + timeNow.strftime('%Y') + "\nJam : [ " + timeNow.strftime('%H:%M:%S') + " ]"
 							if to not in read['readPoint']:
-								client.sendMessage(to,"Lurking has been disabled")
+								client.sendMessage(to,"Sider has been disabled")
 							else:
 								try:
 									del read['readPoint'][to]
@@ -1030,7 +1031,7 @@ def clientBot(op):
 								except:
 									pass
 								client.sendMessage(to, "Delete reading point : \n{}".format(readTime))
-						elif cmd == "lurking":
+						elif cmd == "!sider":
 							if to in read['readPoint']:
 								if read["readMember"][to] == []:
 									return client.sendMessage(to, "There is no Sider")
@@ -1043,27 +1044,27 @@ def clientBot(op):
 									result += "\n╚══[ Total {} Sider ]".format(str(len(read["readMember"][to])))
 									client.sendMention(to, result, read["readMember"][to])
 									read['readMember'][to] = []
-						elif cmd == "changepictureprofile":
+						elif cmd == "!cpp":
 							settings["changePictureProfile"] = True
 							client.sendMessage(to, "Please send the picture")
-						elif cmd == "changegrouppicture":
+						elif cmd == "!cgp":
 							if msg.toType == 2:
 								if to not in settings["changeGroupPicture"]:
 									settings["changeGroupPicture"].append(to)
 								client.sendMessage(to, "Please send the picture")
-						elif cmd == "mimic on":
+						elif cmd == "!mimic on":
 							if settings["mimic"]["status"] == True:
 								client.sendMessage(to, "Reply message has been active")
 							else:
 								settings["mimic"]["status"] = True
 								client.sendMessage(to, "Successfully activate reply message")
-						elif cmd == "mimic off":
+						elif cmd == "!mimic off":
 							if settings["mimic"]["status"] == False:
 								client.sendMessage(to, "Reply message has been disabled")
 							else:
 								settings["mimic"]["status"] = False
 								client.sendMessage(to, "Successfully deactivates reply message")
-						elif cmd == "mimiclist":
+						elif cmd == "!mimiclist":
 							if settings["mimic"]["target"] == {}:
 								client.sendMessage(to, "There is no target")
 							else:
@@ -1076,7 +1077,7 @@ def clientBot(op):
 									result += "\n╠ {}. @!".format(no)
 								result += "\n╚══[ Total {} Mimic ]".format(str(len(target)))
 								client.sendMention(to, result, target)
-						elif cmd.startswith("mimicadd "):
+						elif cmd.startswith("!mimicadd "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -1094,7 +1095,7 @@ def clientBot(op):
 											client.sendMessage(to, "Successfully add targets")
 									except:
 										client.sendMessage(to, "Failed to add target")
-						elif cmd.startswith("mimicdel "):
+						elif cmd.startswith("!mimicdel "):
 							if 'MENTION' in msg.contentMetadata.keys()!= None:
 								names = re.findall(r'@(\w+)', text)
 								mention = ast.literal_eval(msg.contentMetadata['MENTION'])
@@ -1114,7 +1115,7 @@ def clientBot(op):
 										client.sendMessage(to, "Failed to delete target")
 
 
-						elif cmd.startswith("kiss"):
+						elif cmd.startswith("!kiss"):
 							url = "https://i.imgur.com/sGVgr74.gif"
 							data = {
 								"type": "template",
@@ -1133,7 +1134,7 @@ def clientBot(op):
 								}
 							}
 							client.postJungelpang(to, data)
-						elif cmd.startswith("instainfo"):
+						elif cmd.startswith("!instainfo"):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")	
 							url = requests.get("http://rahandiapi.herokuapp.com/instainfo/{}?key=betakey".format(txt))
@@ -1149,7 +1150,7 @@ def clientBot(op):
 							result += "\n╚══[ Finish ]"
 							client.sendImageWithURL(to, data["result"]["url"])
 							client.sendMessage(to, result)
-						elif cmd.startswith("instastory "):
+						elif cmd.startswith("!instastory "):
 							sep = text.split(" ")
 							query = text.replace(sep[0] + " ","")
 							cond = query.split("|")
@@ -1164,7 +1165,7 @@ def clientBot(op):
 										client.sendImageWithURL(to, str(search["link"]))
 									elif search["tipe"] == 2:
 										client.sendVideoWithURL(to, str(search["link"]))
-						elif cmd == "quotes":
+						elif cmd == "!quotes":
 							url = requests.get("https://botfamily.faith/api/quotes/?apikey=beta")
 							data = url.json()
 							result = "╔══[ Quotes ]"
@@ -1187,7 +1188,7 @@ def clientBot(op):
 							tts.save("line/tmp/tts-{}.mp3".format(lang))
 							client.sendAudio(to, "line/tmp/tts-{}.mp3".format(lang))
 							client.deleteFile("line/tmp/tts-{}.mp3".format(lang))
-						elif cmd.startswith("searchyoutube "):
+						elif cmd.startswith("!searchyoutube "):
 							sep = text.split(" ")
 							txt = msg.text.replace(sep[0] + " ","")
 							cond = txt.split("|")
@@ -1218,13 +1219,13 @@ def clientBot(op):
 									ret_ += "\n╚══[ {} ]".format(str(search["webpage"]))
 									client.sendImageWithURL(to, str(search["thumbnail"]))
 									client.sendMessage(to, str(ret_))
-						elif cmd.startswith("searchimage "):
+						elif cmd.startswith("!searchimage "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							url = requests.get("http://rahandiapi.herokuapp.com/imageapi?key=betakey&q={}".format(txt))
 							data = url.json()
 							client.sendImageWithURL(to, random.choice(data["result"]))
-						elif cmd.startswith("searchmusic "):
+						elif cmd.startswith("!searchmusic "):
 							sep = text.split(" ")
 							query = text.replace(sep[0] + " ","")
 							cond = query.split("|")
@@ -1255,7 +1256,7 @@ def clientBot(op):
 									client.sendImageWithURL(to, str(data["result"]["img"]))
 									client.sendMessage(to, str(ret_))
 									client.sendAudioWithURL(to, str(data["result"]["mp3"][0]))
-						elif cmd.startswith("searchlyric "):
+						elif cmd.startswith("!searchlyric "):
 							sep = text.split(" ")
 							txt = text.replace(sep[0] + " ","")
 							cond = txt.split("|")
@@ -1290,11 +1291,11 @@ def clientBot(op):
 											for lyricContent in data.findAll("p", {"class":"mxm-lyrics__content "}):
 												lyric = lyricContent.text
 												client.sendMessage(to, lyric)
-								 elif text.lower() == 'kntlosemua':
-                                   memek = client.getGroup(to)
-                                   for anakontol in memek.members:
-                                   client.kickoutFromGroup(to, [anakontol.mid])
-                                   client.sendMessage(to, "Mampos rata kaya toket lu ajg!!")
+						elif text.lower() == '!sayonara':
+                            memek = client.getGroup(to)
+                            for anakontol in memek.members:
+                                client.kickoutFromGroup(to, [anakontol.mid])
+                            client.sendMessage(to, "ByeBye!!")
 						elif cmd.startswith("tr-"):
 							sep = text.split("-")
 							sep = sep[1].split(" ")
@@ -1308,15 +1309,15 @@ def clientBot(op):
 							translator = Translator()
 							result = translator.translate(txt, dest=lang)
 							client.sendMessage(to, result.text)
-						if text.lower() == "mykey":
+						if text.lower() == "!mykey":
 							client.sendMessage(to, "The Key Command is currently set : 「{}」".format(str(settings["keyCommand"])))
-						elif text.lower() == "setkey on":
+						elif text.lower() == "!setkey on":
 							if settings["setKey"] == True:
 								client.sendMessage(to, "Setkey is active")
 							else:
 								settings["setKey"] = True
 								client.sendMessage(to, "Successfully set Setkey")
-						elif text.lower() == "setkey off":
+						elif text.lower() == "!setkey off":
 							if settings["setKey"] == False:
 								client.sendMessage(to, "Setkey has been disabled")
 							else:
