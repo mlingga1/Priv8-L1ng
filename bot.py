@@ -128,7 +128,7 @@ def menuHelp():
 		key = settings['keyCommand']
 	else:
 		key = ''
-	menuHelp =	"〞〤 Keyword Message 〤〝" + "\n" + \
+	menuHelp =	"aw〞〤 Keyword Message 〤〝" + "\n" + \
 				"<々> " + key + "!Show" + "\n" + \
 				"<々> " + key + "!Translate" + "\n" + \
 				"<々> " + key + "!TextToSpeech" + "\n" + \
@@ -1213,7 +1213,7 @@ def clientBot(op):
 									ret_ += "\n╚══[ {} ]".format(str(search["webpage"]))
 									client.sendImageWithURL(to, str(search["thumbnail"]))
 									client.sendMessage(to, str(ret_))
-                        			elif cmd.startswith("searchimage "):
+                        			eif cmd.startswith("!searchimage "):
                           			        sep = text.split(" ")
                           			        query = text.replace(sep[0] + " ","")
                                                         header = {"User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
@@ -1222,8 +1222,8 @@ def clientBot(op):
                                                         data = BeautifulSoup(url.content, "lxml")
                                                         dataGoogle = []
                                                         for listAllJson in data.findAll("div", {"class":"rg_meta"}):
-                                                         getAllJson = json.loads(listAllJson.text)
-                                                         dataGoogle.append({"title": getAllJson["pt"], "source": getAllJson["ru"], "image": getAllJson["ou"]})
+                                                            getAllJson = json.loads(listAllJson.text)
+                                                            dataGoogle.append({"title": getAllJson["pt"], "source": getAllJson["ru"], "image": getAllJson["ou"]})
                                                         client.sendImageWithURL(to, random.choice(dataGoogle["image"]))
 						elif cmd.startswith("!searchmusic "):
 							sep = text.split(" ")
