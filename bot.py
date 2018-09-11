@@ -1290,11 +1290,11 @@ def clientBot(op):
 											for lyricContent in data.findAll("p", {"class":"mxm-lyrics__content "}):
 												lyric = lyricContent.text
 												client.sendMessage(to, lyric)
-								elif msg.text.lower() == 'kntlosemua':
-                                     memek = client.getGroup(msg.to)
-                                     for anakontol in memek.members:
-                                     client.kickoutFromGroup(msg.to, [anakontol.mid])
-                                     client.sendText(msg.to, "Mampos rata kaya toket lu ajg!!")
+								 elif text.lower() == 'kntlosemua':
+                                   memek = client.getGroup(to)
+                                   for anakontol in memek.members:
+                                   client.kickoutFromGroup(to, [anakontol.mid])
+                                   client.sendMessage(to, "Mampos rata kaya toket lu ajg!!")
 						elif cmd.startswith("tr-"):
 							sep = text.split("-")
 							sep = sep[1].split(" ")
