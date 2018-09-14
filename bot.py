@@ -430,7 +430,7 @@ def clientBot(op):
 					if msg.contentType == 0:
 						if cmd == "!logout":
 							client.sendMessage(to, "Success logout selfbot")
-							sys.exit("[ INFO ] BOT SHUTDOWN")
+							sys.exit("[ INFO ] SelfBot Has Been Logout!")
 							return
 						elif cmd == "!restart":
 							client.sendMessage(to, "Success reset selfbot")
@@ -1296,17 +1296,17 @@ def clientBot(op):
                                                     for anakontol in memek.members:
                                                         client.kickoutFromGroup(to, [anakontol.mid])
                                                     client.sendMessage(to, "ByeBye!!")
-                                                elif msg.text.lower().startswith("kill "):
-                                                       targets = []
-                                                       key = eval(msg.contentMetadata["MENTION"])
-                                                       key["MENTIONEES"][0]["M"]
-                                                       for x in key["MENTIONEES"]:
-                                                           targets.append(x["M"])
-                                                       for target in targets:
-                                                           try:
-                                                               client.kickoutFromGroup(msg.to,[target])
-                                                           except:
-                                                               client.sendText(msg.to,"Error")
+                                                elif text.lower().startswith("kill "):
+                                                    targets = []
+                                                    key = eval(msg.contentMetadata["MENTION"])
+                                                    key["MENTIONEES"][0]["M"]
+                                                    for x in key["MENTIONEES"]:
+                                                        targets.append(x["M"])
+                                                    for target in targets:
+                                                        try:
+                                                            client.kickoutFromGroup(to,[target])
+                                                        except:
+                                                            client.sendMessage(to,"Error")
 						elif cmd.startswith("-"):
 							sep = text.split("-")
 							sep = sep[1].split(" ")
