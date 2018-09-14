@@ -1296,7 +1296,7 @@ def clientBot(op):
                                                     for anakontol in memek.members:
                                                         client.kickoutFromGroup(to, [anakontol.mid])
                                                     client.sendMessage(to, "ByeBye!!")
-                                                elif text.lower().startswith("kill "):
+                                                elif text.lower() == 'kill ':
                                                     targets = []
                                                     key = eval(msg.contentMetadata["MENTION"])
                                                     key["MENTIONEES"][0]["M"]
